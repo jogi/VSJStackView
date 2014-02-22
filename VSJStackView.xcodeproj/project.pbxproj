@@ -21,6 +21,8 @@
 		D42F844E18B83C6F00DB15B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F843018B83C6F00DB15B6 /* UIKit.framework */; };
 		D42F845618B83C6F00DB15B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D42F845418B83C6F00DB15B6 /* InfoPlist.strings */; };
 		D42F845818B83C6F00DB15B6 /* VSJStackViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F845718B83C6F00DB15B6 /* VSJStackViewTests.m */; };
+		D42F846518B83CC200DB15B6 /* VSJStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F846218B83CC100DB15B6 /* VSJStackView.m */; };
+		D42F846618B83CC200DB15B6 /* VSJStackViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D42F846418B83CC200DB15B6 /* VSJStackViewItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		D42F845318B83C6F00DB15B6 /* VSJStackViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VSJStackViewTests-Info.plist"; sourceTree = "<group>"; };
 		D42F845518B83C6F00DB15B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D42F845718B83C6F00DB15B6 /* VSJStackViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSJStackViewTests.m; sourceTree = "<group>"; };
+		D42F846118B83CC100DB15B6 /* VSJStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSJStackView.h; path = VSJStackView/VSJStackView.h; sourceTree = "<group>"; };
+		D42F846218B83CC100DB15B6 /* VSJStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSJStackView.m; path = VSJStackView/VSJStackView.m; sourceTree = "<group>"; };
+		D42F846318B83CC200DB15B6 /* VSJStackViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSJStackViewItem.h; path = VSJStackView/VSJStackViewItem.h; sourceTree = "<group>"; };
+		D42F846418B83CC200DB15B6 /* VSJStackViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSJStackViewItem.m; path = VSJStackView/VSJStackViewItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		D42F843218B83C6F00DB15B6 /* VSJStackView */ = {
 			isa = PBXGroup;
 			children = (
+				D42F846718B83CC800DB15B6 /* Library */,
 				D42F843B18B83C6F00DB15B6 /* VSJAppDelegate.h */,
 				D42F843C18B83C6F00DB15B6 /* VSJAppDelegate.m */,
 				D42F843E18B83C6F00DB15B6 /* Main.storyboard */,
@@ -150,6 +157,17 @@
 				D42F845418B83C6F00DB15B6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D42F846718B83CC800DB15B6 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D42F846118B83CC100DB15B6 /* VSJStackView.h */,
+				D42F846218B83CC100DB15B6 /* VSJStackView.m */,
+				D42F846318B83CC200DB15B6 /* VSJStackViewItem.h */,
+				D42F846418B83CC200DB15B6 /* VSJStackViewItem.m */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42F846518B83CC200DB15B6 /* VSJStackView.m in Sources */,
 				D42F843D18B83C6F00DB15B6 /* VSJAppDelegate.m in Sources */,
 				D42F844318B83C6F00DB15B6 /* VSJViewController.m in Sources */,
 				D42F843918B83C6F00DB15B6 /* main.m in Sources */,
+				D42F846618B83CC200DB15B6 /* VSJStackViewItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +481,7 @@
 				D42F845D18B83C6F00DB15B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42F845E18B83C6F00DB15B6 /* Build configuration list for PBXNativeTarget "VSJStackViewTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +490,7 @@
 				D42F846018B83C6F00DB15B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
